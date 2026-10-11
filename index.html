@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#100508">
+<title>For My Princess Liora ❤️ — Kaya</title>
+<style>
+:root{--bg:#100508;--red:#ff3154;--pink:#ff9aa8;--gold:#f5c8a1;--white:#fff4f4}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;background:radial-gradient(ellipse at 50% 20%,#46101c 0,#1b080e 42%,#080407 100%);color:var(--white);font-family:Georgia,'Times New Roman',serif;overflow-x:hidden}
+main{width:min(720px,100%);margin:auto;padding:28px 18px 54px;text-align:center;position:relative;z-index:1}
+.eyebrow{letter-spacing:.28em;text-transform:uppercase;font:11px Arial,sans-serif;color:var(--gold)}
+.crown{font-size:25px;color:var(--gold);margin:10px 0}
+h1{font-size:clamp(38px,10vw,68px);line-height:1.03;font-weight:normal;font-style:italic;color:#ff8999;text-shadow:0 0 18px #ff315477;margin:12px 0}
+.rule{display:flex;align-items:center;gap:12px;justify-content:center;color:var(--red);margin:20px 0}
+.rule:before,.rule:after{content:"";height:1px;width:90px;background:linear-gradient(90deg,transparent,var(--red))}
+.rule:after{transform:rotate(180deg)}
+.sub{font-size:17px;line-height:1.7;color:#f7dfe2}
+.card{background:linear-gradient(150deg,#240a12dd,#0d0609f2);border:1px solid #ff536b77;border-radius:24px;padding:28px 20px;margin:20px auto;box-shadow:0 0 45px #d10d3030,inset 0 0 25px #ff31540c}
+.heart-logo{font-size:60px;color:var(--red);text-shadow:0 0 25px #ff3154;animation:pulse 1.8s infinite}
+h2{font-weight:normal;font-style:italic;font-size:clamp(25px,6vw,38px);color:var(--gold);margin:8px 0 16px}
+p{line-height:1.8}
+button{font-size:15px;color:#fff5f5;background:linear-gradient(135deg,#a90f2c,#520817);border:1px solid #ff8999;border-radius:999px;padding:13px 20px;margin:7px;cursor:pointer;box-shadow:0 0 18px #ff31542a}
+button:focus-visible{outline:2px solid white;outline-offset:3px}
+button:hover{filter:brightness(1.2)}
+.secondary{background:#1a0b11}
+.letter{display:none;text-align:left;border:1px solid #e8b99b77;background:linear-gradient(145deg,#2a1116,#16090d);border-radius:18px;padding:24px;margin-top:18px;animation:rise .7s ease both}
+.letter.open{display:block}
+.letter p{font-size:17px}
+.amh{font-family:Arial,sans-serif;line-height:2}
+footer{font-size:13px;color:#c99ba4;margin-top:32px;letter-spacing:.08em}
+#hearts{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}
+.float-heart{position:absolute;bottom:-40px;color:#ff4666;opacity:0;animation:floatUp linear forwards;text-shadow:0 0 12px #ff3154}
+@keyframes floatUp{0%{transform:translateY(0) rotate(0);opacity:0}10%{opacity:.75}90%{opacity:.55}100%{transform:translateY(-110vh) rotate(35deg);opacity:0}}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.12)}}
+@keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.small{font:12px Arial,sans-serif;color:#cdaab0}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div id="hearts" aria-hidden="true"></div>
+<main>
+  <div class="eyebrow">A little surprise made with love</div>
+  <div class="crown">♛</div>
+  <h1>My Princess<br>Liora</h1>
+  <div class="rule">♥</div>
+  <div class="sub">A special little world, made just for you.<br><span style="color:var(--gold)">From your Kaya ❤️</span></div>
+
+  <section class="card">
+    <div class="heart-logo">♡</div>
+    <h2>For you, my love</h2>
+    <p>You make ordinary moments feel magical. If I could give you one thing, it would be the chance to see yourself through my eyes — then you would understand how precious you are to me.</p>
+    <button id="letterBtn" aria-expanded="false" aria-controls="loveLetter">💌 Open My Love Letter</button>
+    <button class="secondary" id="languageBtn">አማርኛ / Amharic</button>
+    <div class="letter" id="loveLetter">
+      <p><strong>My dearest Princess Liora,</strong></p>
+      <p>You are a beautiful part of my story, and I’m grateful for every smile, every conversation, and every memory we share. Even when distance keeps us apart, I hope you always feel cared for, respected, and appreciated.</p>
+      <p>I can’t promise that every day will be perfect, but I can promise to keep choosing kindness, honesty, and effort. You deserve a love that makes you feel safe, valued, and free to be yourself.</p>
+      <p>Whenever you need a reminder, come back to this little page: someone made it especially for you, with a full heart.</p>
+      <p style="color:var(--gold);font-style:italic">With love, today and always,<br>Your Kaya ❤️</p>
+      <hr style="border:0;border-top:1px solid #ff899955">
+      <div class="amh" id="amharicLetter" hidden>
+        <p><strong>ውዷ ልዕልት ሊዮራዬ፣ ❤️</strong></p>
+        <p>በሕይወቴ ውስጥ ያለሽ ቦታ ልዩ ነው። ከአንቺ ጋር የምናጋራቸው ንግግሮች፣ ፈገግታዎችና ትዝታዎች ለእኔ ውድ ናቸው።</p>
+        <p>ሁሉም ቀን ፍጹም እንደሚሆን ባልልም፣ በፍቅር፣ በእውነትና በአክብሮት ለመቀጠል እጥራለሁ። ሁልጊዜ የተከበርሽ፣ የተወደድሽና የተገመትሽ እንዲሰማሽ እመኛለሁ።</p>
+        <p>ይህን ትንሽ የፍቅር ስጦታ በአንቺ ላይ በማሰብ አዘጋጀሁት። ልዕልት ሊዮራዬ፣ ሁሌም ደስተኛ ሁኚ። ❤️</p>
+        <p style="color:var(--gold);font-style:italic">በፍቅር፣ ካያ</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="card">
+    <div style="font-size:30px;color:var(--red)">∞ ♥ ∞</div>
+    <h2>One heart, many miles</h2>
+    <p>No matter the distance or the day, I hope this little corner of the internet reminds you that you matter.</p>
+    <p class="amh" style="color:var(--gold)">ሊዮራዬ፣ ልዩ ነሽ። በፍቅርና በአክብሮት ሁሌም አስታውስሻለሁ። ❤️</p>
+  </section>
+
+  <button id="musicBtn">♫ Play a little melody</button>
+  <div class="small">Tap to start or stop a gentle melody. Sound begins only when you press the button.</div>
+  <footer>Made with care by Kaya, for Princess Liora ♡</footer>
+</main>
+<script>
+const hearts = document.getElementById('hearts');
+function makeHeart(){
+  const el=document.createElement('span'); el.className='float-heart';
+  el.textContent=['♥','♡','✦'][Math.floor(Math.random()*3)];
+  el.style.left=Math.random()*100+'%';
+  el.style.fontSize=(12+Math.random()*22)+'px';
+  const duration=7+Math.random()*7; el.style.animationDuration=duration+'s';
+  hearts.appendChild(el); setTimeout(()=>el.remove(),duration*1000);
+}
+for(let i=0;i<12;i++) setTimeout(makeHeart,i*350);
+setInterval(makeHeart,700);
+
+const letterBtn=document.getElementById('letterBtn');
+const letter=document.getElementById('loveLetter');
+letterBtn.addEventListener('click',()=>{
+  const open=letter.classList.toggle('open');
+  letterBtn.setAttribute('aria-expanded',String(open));
+  letterBtn.textContent=open?'💗 Close My Love Letter':'💌 Open My Love Letter';
+  if(open) letter.scrollIntoView({behavior:'smooth',block:'nearest'});
+});
+document.getElementById('languageBtn').addEventListener('click',()=>{
+  const el=document.getElementById('amharicLetter');
+  el.hidden=!el.hidden;
+  document.getElementById('languageBtn').textContent=el.hidden?'አማርኛ / Amharic':'Hide Amharic / አማርኛ';
+  if(!el.hidden) letter.classList.add('open');
+});
+
+// A small original synthesized melody; no external song or audio file required.
+let audioCtx=null, timer=null, noteIndex=0;
+const notes=[392,440,523.25,440,349.23,392,440,392,329.63,392,440,523.25];
+function playNote(){
+  if(!audioCtx)return;
+  const now=audioCtx.currentTime;
+  const osc=audioCtx.createOscillator(), gain=audioCtx.createGain();
+  osc.type='sine'; osc.frequency.value=notes[noteIndex%notes.length];
+  gain.gain.setValueAtTime(0.0001,now);
+  gain.gain.exponentialRampToValueAtTime(0.07,now+0.04);
+  gain.gain.exponentialRampToValueAtTime(0.0001,now+0.42);
+  osc.connect(gain);gain.connect(audioCtx.destination);osc.start(now);osc.stop(now+0.45);
+  noteIndex++;
+}
+const musicBtn=document.getElementById('musicBtn');
+musicBtn.addEventListener('click',async()=>{
+  if(timer){clearInterval(timer);timer=null;if(audioCtx)await audioCtx.suspend();musicBtn.textContent='♫ Play a little melody';return;}
+  try{
+    audioCtx=audioCtx||new (window.AudioContext||window.webkitAudioContext)();
+    await audioCtx.resume();playNote();timer=setInterval(playNote,520);
+    musicBtn.textContent='Ⅱ Stop the melody';
+  }catch(e){musicBtn.textContent='Audio is not available in this browser';}
+});
+</script>
+</body>
+</html>
